@@ -3,14 +3,17 @@
 
 <head>
     <meta charset="UTF8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Пинк</title>
 </head>
 
 <body class="page__body">
+    <!-------------------ШАПКА СТРАНИЦЫ------------------------>
     <header class="page-header">
         <a class="page-header__logo" href="">
             <img src="images/pink.png" width="74" height="23" alt="">
         </a>
+        <!--------Главное меню--------->
         <nav class="main__nav">
             <button class="main-nav__toggle" type="button">
                 <span class="visually-hidden">Открыть меню</span>
@@ -30,18 +33,21 @@
             </div>
         </nav>
     </header>
+    <!-------------------ОСНОВНОЕ СОДЕРЖИМОЕ СТРАНИЦЫ------------------------>
     <main class="page-main">
+        <h1 class="visually-hidden">Мобильное приложение для фотографов</h1>
 
+        <!--------Промо блок--------->
         <section class="promo">
-            <div class="wrapper">
-                <h1 class="promo__title">Взгляните на жизнь иначе!</h1>
+            <div class="wrapper promo__promo">
+                <h2 class="promo__title">Взгляните на жизнь иначе!</h2>
 
                 <div class="promo__app-download download-block">
                     <a class="download-block__button" href="">Скачать приложение</a>
                     <div class=download-block__links ">
-                        <a class="download-block__link download-block__link--apple " href=" " title="Скачать для iPhone и iPad "><img src="images/apple-logo.png " alt=" "></a>
-                        <a class="download-block__link download-block__link--android " href=" " title="Скачать для Android "><img src="images/android-logo.png " alt=" "></a>
-                        <a class="download-block__link download-block__link--windows " href=" " title="Скачать для Windows Phone ">
+                        <a class="download-block__link download-block__link--apple " href="# " target="_blank " title="Скачать для iPhone и iPad "><img src="images/apple-logo.png " alt=" "></a>
+                        <a class="download-block__link download-block__link--android " href="# " target="_blank " title="Скачать для Android "><img src="images/android-logo.png " alt=" "></a>
+                        <a class="download-block__link download-block__link--windows " href="# " target="_blank " title="Скачать для Windows Phone ">
                             <svg width="44 " height="44 ">
                                 <rect x="1 " y="1 " width="20.91 " height="19.52 " style="fill:#F05423 " />
                                 <rect x="24.59 " y="1 " width="20.91 " height="19.52 " style="fill:#84C441 " />
@@ -49,19 +55,20 @@
                                 <rect x="24.59 " y="23.09 " width="20.91 " height="19.52 " style="fill:#F9BC15 " />
                            </svg>
                         </a>
-                            <span>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</span>
+                            <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
                       
                     </div>
                 </div>
             </div>
-        </section>
+        </section><!----class="promo "----->
 
+        <!--------Блок преимуществ--------->
         <section class="advantages ">
-            <div class="wrapper ">
+            <div class="wrapper advantages__wrapper ">
                 <div class="advantages__titles ">
                     <h2 class="advantages__title ">Устали от серости мегаполиса? <span class="advantages__subtitle ">Нам есть, что вам предложить!</span></h2>
                 </div>
-                <h2 class="visually-hidden ">Наши преимущества</h2>
+                <h3 class="visually-hidden ">Наши преимущества</h3>
                 <ul class="advantages__list site-list ">
                     <li class="site-list__item ">
                         <h3 class="site-list__title ">Поднимает настроение</h3>
@@ -81,19 +88,24 @@
                 </div>
 
             </div>
-        </section>
+        </section><!----class="advantages "----->
 
+
+<!--------Блок главного преимущества--------->
         <section class="main-advantage visually-hidden ">
+          <div class="wrapper main-advantages__wrapper ">
             <img class="main-advantage__image " src="images/timer.png " alt=" ">
             <div class="main-advantage__content ">
                 <h3>Эффект на 24 часа!</h3>
                 <p>Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-                <a href=" ">Узнать больше об исследовании</a>
+                <a href="# " target="_blank ">Узнать больше об исследовании</a>
             </div>
-        </section>
-
+          </div>
+        </section> <!----class="main-advantage "----->
+<!--------Блок отзывов--------->
         <section class="slider-reviews ">
-            <h2 class="visually-hidden ">Отзывы о нас</h2>
+          <div class="wrapper slider-reviews__wrapper ">
+            <h3 class="visually-hidden ">Отзывы о нас</h3>
             <div class="slider-reviews__list ">
                 <blockquote class="slider-reviews__item ">
                     <div class="slider-reviews__autor-info autor-info ">
@@ -123,14 +135,12 @@
                 <button class="slider-reviews__toggle " type="button "></button>
                 <button class="slider-reviews__toggle " type="button "></button>
             </p>
-        </section>
+          </div>
+        </section><!----class="slider-reviews "----->
 
-        <section class="price slider-price ">
-
-        </section>
-
-        <section class="price " id="price ">
-            <h2 class="visually-hidden ">Стоимость приложения</h2>
+  <!--------Блок с ценами--------->
+        <section class="price ">
+            <h3 class="visually-hidden ">Стоимость приложения</h3>
     
             <div class="price__slider content-wrapper ">
               <table class="price__table table-price ">
@@ -241,9 +251,67 @@
                 </button>
                     </div>
                 </div>
-        </section>
+        </section><!----class="price "----->
+
+        <!--------Блок с контактами-------->
+        <section class="contacts ">
+          <h3 class="visually-hidden ">Наши контакты</h3>
+          <div class="wrapper contacts__wrapper ">
+            <div class="contacts__ title ">
+              <span>Остались вопросы?
+                Свяжитесь с нами!</span>
+            </div>
+            <div class="contacts__phone ">
+              <span class="contacts__phone-text ">Звоните:</span>
+              <div class="contacts__phone-number "><a href="tel:+78125556666 ">+7 (812) 555-66-66</a></div>
+            </div>
+            <div class="contacts__email ">
+              <span class="contacts__email-text ">Пишите:</span>
+              <div class="contacts__email-address "><a href="mailto:mail@htmlacademy.ru ">mail@htmlacademy.ru</a></div>
+            </div>
+            <div class="contacts__office ">
+              <span class="contacts__office-text ">Приезжайте в гости:</span>
+              <address class="contacts__office-address ">ул. Большая
+                Конюшенная, 19/8</address>
+            </div>
+            <div class="contacts__map ">
+              
+                <span class="visually-hidden ">Карта Санкт-Петербурга с отметкой о нашем местонахождении</span>
+                <div class="map__location ">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aee017cc118ef457883f3de7de363d0fda0d2eae1a1d0f4d56fdaae902ed1f0e8&amp;source=constructor " width="320 " height="362 "></iframe></div>
+            </div>
+            
+          </div>
+
+        </section><!----class="contacts "----->
 
     </main>
+<!-------------------ПОДВАЛ СТРАНИЦЫ------------------------>
+    <footer class="page__footer footer ">
+      <div class="wrapper footer__wrapper ">
+        <div class="footer__logo ">
+          <span>
+            <img src="images/glasses.png " alt=" ">
+            <img src="images/pink.png " alt=" ">
+          </span>
+        </div>
+        <ul class="footer__social ">
+          <li>
+            <a href="# " target="_blank "><span class="visually-hidden ">Ссылка на твиттер</span></a>
+          </li>
+          <li>
+            <a href="# " target="_blank "><span class="visually-hidden ">Ссылка на фейсбук</span></a>
+          </li>
+          <li>
+            <a href="# " target="_blank "><span class="visually-hidden ">Ссылка на ютуб</span></a>
+          </li>
+        </ul>
+        <div class="footer__copyright ">
+          <span>Разработано</span>
+          <a href="https://htmlacademy.ru/intensive/adaptive "><img src="images/html academy.png " alt="Ссылка на HTML Academy "></a>
+        </div>
+      </div>
+    </footer>
 </body>
 
 </html>
